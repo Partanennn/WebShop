@@ -7,7 +7,7 @@ namespace WebShopBackend.Application.Controllers
     [ApiController]
     public class ItemController : ControllerBase
     {
-        private readonly List<Item> _items =
+        private List<Item> _items =
         [
             new Item()
             {
@@ -23,6 +23,13 @@ namespace WebShopBackend.Application.Controllers
         public ActionResult<List<Item>> GetItems() 
         {
             return _items;
+        }
+
+        [HttpPost("add")]
+        public ActionResult<Item> AddItem(Item newItem)
+        {
+            _items.Add(newItem);
+            return newItem;
         }
     }
 }
