@@ -6,8 +6,6 @@ namespace WebShopBackend.Application.Models
     {
         public string Name { get; set; } = null!;
         public string? Description { get; set; }
-        public int CategoryId { get; set; }
-        public ItemTypeCategory Cateogry { get; set; }
-
+        public ItemTypeCategory Category { get; set; } 
     }
 }

@@ -6,9 +6,9 @@ namespace WebShopBackend.Application
 {
     public class WebShopDbContext : IdentityDbContext<User>
     {
-        public WebShopDbContext(DbContextOptions<WebShopDbContext> options) : base(options)
-        {
-            
-        }
+        public WebShopDbContext(DbContextOptions<WebShopDbContext> options) : base(options) {}
+
+        public DbSet<Item> Items { get; set; }
+        public DbSet<ItemType> ItemTypes { get; set; }
     }
 }
