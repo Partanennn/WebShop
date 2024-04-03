@@ -1,4 +1,4 @@
-﻿namespace WebShopBackend.Database.Models
+﻿namespace WebShopBackend.Application.Models
 {
     public class Item : ModelBase
     {
@@ -6,5 +6,6 @@
         public double Price { get; set; }
         public int Quantity { get; set; }
         public string? Description { get; set; }
+        public ItemType Category { get; set; }
     }
 }
