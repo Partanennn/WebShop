@@ -20,13 +20,13 @@ namespace WebShopBackend.Application.Controllers
             }
         ];
 
-        [Authorize]
         [HttpGet("")]
         public ActionResult<List<Item>> GetItems() 
         {
             return _items;
         }
 
+        [Authorize]
         [HttpPost("add")]
         public ActionResult<Item> AddItem(Item newItem)
         {
