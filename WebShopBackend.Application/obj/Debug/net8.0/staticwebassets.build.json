@@ -1,23 +1,11 @@
 {
   "Version": 1,
-  "Hash": "mTfyLNSAE5lDz+/4/9h2J5I4uHkrfS7kunXZx7L0li8=",
+  "Hash": "LM+Vv/SsLY/JvCY3kOPnFBiwlpYyPFXhxy07i8nctxg=",
   "Source": "WebShopBackend.Application",
   "BasePath": "_content/WebShopBackend.Application",
   "Mode": "Default",
   "ManifestType": "Build",
-  "ReferencedProjectsConfiguration": [
-    {
-      "Identity": "D:\\Projects\\WebShop\\WebShopBackend\\WebShopBackend.Database\\WebShopBackend.Database.csproj",
-      "Version": 2,
-      "Source": "WebShopBackend.Database",
-      "GetPublishAssetsTargets": "ComputeReferencedStaticWebAssetsPublishManifest;GetCurrentProjectPublishStaticWebAssetItems",
-      "AdditionalPublishProperties": "Configuration=Debug;Platform=AnyCPU",
-      "AdditionalPublishPropertiesToRemove": "WebPublishProfileFile;TargetFramework",
-      "GetBuildAssetsTargets": "GetCurrentProjectBuildStaticWebAssetItems",
-      "AdditionalBuildProperties": "Configuration=Debug;Platform=AnyCPU",
-      "AdditionalBuildPropertiesToRemove": "WebPublishProfileFile;TargetFramework"
-    }
-  ],
+  "ReferencedProjectsConfiguration": [],
   "DiscoveryPatterns": [],
   "Assets": []
 }

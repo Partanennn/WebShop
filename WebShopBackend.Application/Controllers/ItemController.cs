@@ -1,5 +1,6 @@
-﻿using Microsoft.AspNetCore.Mvc;
-using WebShopBackend.Database.Models;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
+using WebShopBackend.Application.Models;
 
 namespace WebShopBackend.Application.Controllers
 {
@@ -19,6 +20,7 @@ namespace WebShopBackend.Application.Controllers
             }
         ];
 
+        [Authorize]
         [HttpGet("")]
         public ActionResult<List<Item>> GetItems() 
         {
